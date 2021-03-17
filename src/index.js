@@ -1,4 +1,13 @@
-function addNumber(a,b){
-    return (a+b);
+import {http } from './http';
+import {ui} from './ui';
+
+document.addEventListener
+('DOMContentLoaded',getContacts);
+
+function getContacts(){
+    http 
+       .get('http://localhost:3000/contact')
+       .then(contacts=>ui.paint(contacts))
+       .catch(err=>console.log(err));
+
 }
-console.log(addNumber(2,4))
