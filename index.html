@@ -1,14 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+        crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Contact App</h1>
-    <script src="build/bundle.js"></script>
+    <div class="container">
+        <div class="jumbotron ">
+            <h1 class="display-4">Contact App</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatibus, sunt
+                delectus laborum esse adipisci at, vitae libero asperiores, distinctio dignissimos suscipit quis
+                voluptatum impedit blanditiis alias ab dolores autem.</p>
+
+        </div>
+
+    </div>
+    <div class="container">
+       
+            <div class="card card-body mr-3">
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">FirstName</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">LastName</label>
+                        <input type="text" id="lastName" class="form-control" name="lastName">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Email</label>
+                        <input type="email" id="email" class="form-control" name="email">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone</label>
+                        <input type="phone" id="phone" class="form-control" name="phone">
+
+                    </div>
+                    <input type="text" id="" hidden>
+                    <button class="btn btn-block btn-primary" id="contact-submit">Submit</button>
+                </form>
     
+            </div>
+
+        </div>
+        <div id="contacts">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title ">Tipu Sultan</h5>
+                    <p class="card-text  ">tipsultancse101@gmail.com</p>
+                    <a href="#" id="edit" class="mr-3 ">
+                        <i class="fas fa-pencil-alt  "></i>
+                    </a>
+                    <a href="#" id="delete" ">
+                        <i class="fas fa-trash"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title ">Tipu Sultan</h5>
+                    <p class="card-text  ">tipsultancse101@gmail.com</p>
+                    <a href="#" id="edit" class="mr-3 ">
+                        <i class="fas fa-pencil-alt  "></i>
+                    </a>
+                    <a href="#" id="delete" ">
+                        <i class="fas fa-trash"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title ">Tipu Sultan</h5>
+                    <p class="card-text  ">tipsultancse101@gmail.com</p>
+                    <a href="#" id="edit" class="mr-3 ">
+                        <i class="fas fa-pencil-alt  "></i>
+                    </a>
+                    <a href="#" id="delete" ">
+                        <i class="fas fa-trash"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title ">Tipu Sultan</h5>
+                    <p class="card-text  ">tipsultancse101@gmail.com</p>
+                    <a href="#" id="edit" class="mr-3 ">
+                        <i class="fas fa-pencil-alt  "></i>
+                    </a>
+                    <a href="#" id="delete" ">
+                        <i class="fas fa-trash"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <script src="build/bundle.js"></script>
+
 </body>
+
 </html>
