@@ -8,8 +8,7 @@
     <title>Contact App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-        crossorigin="anonymous">
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,41 +23,40 @@
 
     </div>
     <div class="container">
-       
-            <div class="card card-body mr-3">
-                <form>
-                    <div class="form-group">
-                        <label for="firstName">FirstName</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName">
 
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">LastName</label>
-                        <input type="text" id="lastName" class="form-control" name="lastName">
+        <div class="card card-body mr-3">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="firstName">FirstName</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName">
 
-                    </div>
-                    <div class="form-group">
-                        <label for="text">Email</label>
-                        <input type="email" id="email" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">LastName</label>
+                    <input type="text" id="lastName" class="form-control" name="lastName">
 
-                    </div>
-                    <div class="form-group">
-                        <label for="number">Phone</label>
-                        <input type="phone" id="phone" class="form-control" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="text">Email</label>
+                    <input type="email" id="email" class="form-control" name="email">
 
-                    </div>
-                    <input type="text" id="" hidden>
-                    <button class="btn btn-block btn-primary" id="contact-submit">Submit</button>
-                </form>
-    
-            </div>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone</label>
+                    <input type="phone" id="phone" class="form-control" name="phone">
 
+                </div>
+                <input type="text" id="id" hidden>
+                <button class="btn btn-block btn-primary" id="contact-submit">Submit</button>
+                <div class="form-end"></div>
+            </form>
         </div>
-        <div id="contacts" class="mb-5">
-           
-        </div>
+        <div id="contacts" class="mb-5"></div>
+        <!--contacts-->
 
     </div>
+
+
     <script src="build/bundle.js"></script>
 
 </body>
