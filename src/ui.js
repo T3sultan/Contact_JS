@@ -5,6 +5,7 @@ class UI{
         this.lastNameInput = document.getElementById('lastName');
         this.emailInput = document.getElementById('email');
         this.phoneInput = document.getElementById('phone');
+        this.contactSubmit =document.getElementById('contact-submit')
     }
    paint(contacts){
        let output ='';
@@ -31,6 +32,18 @@ class UI{
        });
          this.contactInput.innerHTML=output;
 
+   }
+   fillForm({firstName,lastName,email,phone}){
+    this.firstNameInput.value=firstName;
+    this.lastNameInput.value=lastName;
+    this.emailInput.value=email;
+    this.phoneInput.value=phone;
+    
+   }
+   btnHandle(){
+    this.contactSubmit.textContent = 'updateContact';
+    this.contactSubmit.classList.remove('btn-primary');
+    this.contactSubmit.classList.add('btn-danger')
    }
    clearFields(){
        this.firstNameInput.value='';

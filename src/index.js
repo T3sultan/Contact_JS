@@ -1,11 +1,42 @@
 import { http } from './http';
 import { ui } from './ui';
 //getting contact after dom loaded
-document.addEventListener
-    ('DOMContentLoaded', getContacts);
+document.addEventListener('DOMContentLoaded', getContacts);
 
   //Delete contact
   document.getElementById('contacts').addEventListener('click',deleteContact);
+
+  //deleted function
+function deleteContact(e){
+    if(e.target.parentElement.id === 'delete'){
+        const id = e.target.parentElement.dataset.id;
+        //console.log(id)
+       http
+        .delete(` http://localhost:3000/contacts/${id}`)
+        .then(()=>{
+           console.log('contact deleted');
+           getContacts();
+       }).catch(err=>console.log(err))
+    }
+
+ }
+ //edit contact
+ document.getElementById('contacts').addEventListener('click',editContact);
+ //edit contact function
+ function editContact(e){
+     if(e.target.parentElement.id==='edit'){
+         const id=e.target.parentElement.dataset.id;
+        http
+        .get(` http://localhost:3000/contacts/${id}`)
+        .then(data=>{
+           ui.fillForm(data);
+           ui.btnHandle();
+
+        })
+     }
+
+ }
+ 
    
   
 //From submit handle
@@ -44,18 +75,3 @@ function getContacts() {
 
 }
 
-//deleted function
-function deleteContact(e){
-    if(e.target.parentElement.id === 'delete'){
-        const id = e.target.parentElement.dataset.id;
-        //console.log(id)
-       http
-        .delete(` http://localhost:3000/contacts/${id}`)
-        .then(()=>{
-           console.log('contact deleted');
-           getContacts();
-       }).catch(err=>console.log(err))
-    }
-
- }
- 
