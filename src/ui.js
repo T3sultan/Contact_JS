@@ -1,4 +1,4 @@
-export default class UI{
+class UI{
     constructor(){
         this.contactInput = document.getElementById('contacts');
         this.firstNameInput = document.getElementById('firstName');
@@ -27,10 +27,16 @@ export default class UI{
            </div>
 
        </div>
-           `
+           `;
        });
          this.contactInput.innerHTML=output;
 
+   }
+   clearFields(){
+       this.firstNameInput.value='';
+       this.lastNameInput.value='';
+       this.emailInput.value='';
+       this.phoneInput.value='';
    }
 }
 export const ui = new UI();
