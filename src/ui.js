@@ -16,10 +16,10 @@ class UI{
                <h5 class="card-title ">${firstName} ${lastName}</h5>
                <p class="card-text ">${email}</p>
                <p clase="card-text ">${phone}</p>
-               <a href="#" id="edit" class="mr-3 ">
+               <a href="#" id="edit" class="mr-3" data-id="${contact.id}">
                    <i class="fas fa-pencil-alt  "></i>
                </a>
-               <a href="#" id="delete" ">
+               <a href="#" id="delete" data-id="${contact.id}">
                    <i class="fas fa-trash"></i>
 
                </a>
